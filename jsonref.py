@@ -414,13 +414,7 @@ def validate(obj):
     """
     Accepts an object and validates its' references
     """
-    repr(JsonRef.replace_refs(
-        obj,
-        base_uri=None,
-        loader=None,
-        jsonschema=False,
-        load_on_repr=True,
-    ))
+    repr(JsonRef.replace_refs(obj, load_on_repr=True))
 
 
 def _ref_encoder_factory(cls):
