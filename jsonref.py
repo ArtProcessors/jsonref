@@ -48,8 +48,8 @@ class JsonRefError(Exception):
         self.path = list(path)
         self.cause = self.__cause__ = cause
 
-    def __repr__(self):
-        return "<%s: %r>" % (self.__class__.__name__, self.message)
+    def __str__(self):
+        return "<{}: {} {}>".format(self.__class__.__name__, self.message, self.path)
 
 
 class JsonRef(LazyProxy):
