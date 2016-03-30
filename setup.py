@@ -26,7 +26,7 @@ classifiers = [
 
 
 setup(
-    name="jsonref",
+    name="jsonref-ap",
     version=__version__,
     py_modules=["jsonref", "proxytypes"],
     author="Chase Sterling",
